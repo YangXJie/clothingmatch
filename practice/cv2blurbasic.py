@@ -24,7 +24,6 @@ aussian = cv.GaussianBlur(src, (5, 5), 1)
 wedian = cv.medianBlur(src, 5)
 
 res = np.hstack((src, blur, wedian))  # hstack:横着拼接    vstack:竖着拼接
-print(type(res))
 cv.imshow('pic', res)
 
 cv.waitKey(0)  # 按任意键关闭窗口，cv2.waitKey(1000) 延时一秒关闭窗口
